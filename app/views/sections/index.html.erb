@@ -1,7 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Sections</h1>
-
+<hr>
+<%= form_tag(search_sections_url, method: "get") do %>
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<hr>
 <table>
   <thead>
     <tr>
