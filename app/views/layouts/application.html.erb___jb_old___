@@ -19,7 +19,7 @@
 
   <body>
   <div>
-    <table id="navbar" style="width:100%; background-color:MediumSeaGreen;">
+    <table style="width:100%; background-color:MediumSeaGreen;">
       <tr>
        <th><a href="/students" style="color:White;">Students</a></th>
        <th><a href="/courses" style="color:White;">Courses</a></th>

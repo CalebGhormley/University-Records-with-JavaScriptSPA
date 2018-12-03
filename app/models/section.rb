@@ -3,13 +3,10 @@ class Section < ApplicationRecord
   has_many :enrollments
   has_many :students, through: :enrollments
 
-  validates :semester, presence: true
-
-  validates :number, presence: true
-
-  validates :room_number, presence: true
+  validates_presence_of :semester, :number, :room_number
 
   def details
-    "#{course.name} #{number} #{semester}"
+    "#{course.name}, Section #{number}, #{semester}"
   end
+
 end

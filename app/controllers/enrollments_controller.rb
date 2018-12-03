@@ -24,7 +24,7 @@ class EnrollmentsController < ApplicationController
   # POST /enrollments
   # POST /enrollments.json
   def create
-    @enrollment = Enrollment.new
+    @enrollment = Enrollment.new(enrollment_params)
 
     respond_to do |format|
       if @enrollment.save
